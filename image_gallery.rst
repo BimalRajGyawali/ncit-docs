@@ -1,23 +1,8 @@
 image\_gallery package
 ======================
 
-Subpackages
------------
-
-.. toctree::
-
-    image_gallery.migrations
-
 Submodules
 ----------
-
-image\_gallery\.admin module
-----------------------------
-
-.. automodule:: image_gallery.admin
-    :members:
-    :undoc-members:
-    :show-inheritance:
 
 image\_gallery\.apps module
 ---------------------------
@@ -35,22 +20,6 @@ image\_gallery\.models module
     :undoc-members:
     :show-inheritance:
 
-image\_gallery\.tests module
-----------------------------
-
-.. automodule:: image_gallery.tests
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-image\_gallery\.urls module
----------------------------
-
-.. automodule:: image_gallery.urls
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
 image\_gallery\.views module
 ----------------------------
 
@@ -60,10 +29,3 @@ image\_gallery\.views module
     :show-inheritance:
 
 
-Module contents
----------------
-
-.. automodule:: image_gallery
-    :members:
-    :undoc-members:
-    :show-inheritance:

@@ -1,23 +1,8 @@
 notices package
 ===============
 
-Subpackages
------------
-
-.. toctree::
-
-    notices.migrations
-
 Submodules
 ----------
-
-notices\.admin module
----------------------
-
-.. automodule:: notices.admin
-    :members:
-    :undoc-members:
-    :show-inheritance:
 
 notices\.apps module
 --------------------
@@ -35,22 +20,6 @@ notices\.models module
     :undoc-members:
     :show-inheritance:
 
-notices\.tests module
----------------------
-
-.. automodule:: notices.tests
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-notices\.urls module
---------------------
-
-.. automodule:: notices.urls
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
 notices\.views module
 ---------------------
 
@@ -60,10 +29,3 @@ notices\.views module
     :show-inheritance:
 
 
-Module contents
----------------
-
-.. automodule:: notices
-    :members:
-    :undoc-members:
-    :show-inheritance:
