@@ -1,0 +1,682 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>academics package &mdash; The Unofficial Ncit 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'1.0',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="academics.migrations package" href="academics.migrations.html" />
+    <link rel="prev" title="ncit" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> The Unofficial Ncit
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">ncit</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">academics package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="academics.migrations.html">academics.migrations package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-academics.admin">academics.admin module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-academics.apps">academics.apps module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-academics.context_processors">academics.context_processors module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-academics.models">academics.models module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-academics.tests">academics.tests module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-academics.urls">academics.urls module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-academics.views">academics.views module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-academics">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="image_gallery.html">image_gallery package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage.html">manage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ncit.html">ncit package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notices.html">notices package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="secret_key.html">secret_key module</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">The Unofficial Ncit</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">ncit</a> &raquo;</li>
+        
+      <li>academics package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/academics.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="academics-package">
+<h1>academics package<a class="headerlink" href="#academics-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="academics.migrations.html">academics.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="academics.migrations.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="academics.migrations.html#module-academics.migrations.0001_initial">academics.migrations.0001_initial module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="academics.migrations.html#module-academics.migrations.0002_semester">academics.migrations.0002_semester module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="academics.migrations.html#module-academics.migrations.0003_program_desc">academics.migrations.0003_program_desc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="academics.migrations.html#module-academics.migrations.0004_program_career_prospectus">academics.migrations.0004_program_career_prospectus module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="academics.migrations.html#module-academics.migrations.0005_auto_20200416_0707">academics.migrations.0005_auto_20200416_0707 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="academics.migrations.html#module-academics.migrations.0006_auto_20200516_1216">academics.migrations.0006_auto_20200516_1216 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="academics.migrations.html#module-academics.migrations.0007_auto_20200516_1217">academics.migrations.0007_auto_20200516_1217 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="academics.migrations.html#module-academics.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-academics.admin">
+<span id="academics-admin-module"></span><h2>academics.admin module<a class="headerlink" href="#module-academics.admin" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-academics.apps">
+<span id="academics-apps-module"></span><h2>academics.apps module<a class="headerlink" href="#module-academics.apps" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="academics.apps.AcademicsConfig">
+<em class="property">class </em><code class="descclassname">academics.apps.</code><code class="descname">AcademicsConfig</code><span class="sig-paren">(</span><em>app_name</em>, <em>app_module</em><span class="sig-paren">)</span><a class="headerlink" href="#academics.apps.AcademicsConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">django.apps.config.AppConfig</span></code></p>
+<dl class="attribute">
+<dt id="academics.apps.AcademicsConfig.name">
+<code class="descname">name</code><em class="property"> = 'academics'</em><a class="headerlink" href="#academics.apps.AcademicsConfig.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-academics.context_processors">
+<span id="academics-context-processors-module"></span><h2>academics.context_processors module<a class="headerlink" href="#module-academics.context_processors" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="academics.context_processors.get_context_global_variable">
+<code class="descclassname">academics.context_processors.</code><code class="descname">get_context_global_variable</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#academics.context_processors.get_context_global_variable" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>request</strong> (<em>HTTPRequest</em>) – carries request info</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">context which is available in all templates</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-academics.models">
+<span id="academics-models-module"></span><h2>academics.models module<a class="headerlink" href="#module-academics.models" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="academics.models.Program">
+<em class="property">class </em><code class="descclassname">academics.models.</code><code class="descname">Program</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#academics.models.Program" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">django.db.models.base.Model</span></code></p>
+<p>Program model represents different programs like BE Software, BE Civil, BE IT and so on.</p>
+<p>Each Program has its unique code.</p>
+<p>Each Program has different semesters; for master programs 4 semesters and for bachelor
+programs 8 semesters. Semester is represented by another model/table. Program and Semester
+has one-to-many relationship i.e One program has many semesters but particular semester
+belongs to only one program.</p>
+<dl class="exception">
+<dt id="academics.models.Program.DoesNotExist">
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="headerlink" href="#academics.models.Program.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="academics.models.Program.MultipleObjectsReturned">
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="headerlink" href="#academics.models.Program.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="academics.models.Program.career_prospectus">
+<code class="descname">career_prospectus</code><a class="headerlink" href="#academics.models.Program.career_prospectus" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="academics.models.Program.code">
+<code class="descname">code</code><a class="headerlink" href="#academics.models.Program.code" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="academics.models.Program.desc">
+<code class="descname">desc</code><a class="headerlink" href="#academics.models.Program.desc" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="academics.models.Program.get_absolute_url">
+<code class="descname">get_absolute_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#academics.models.Program.get_absolute_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">url to the program specified by code as program/{code}</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="academics.models.Program.id">
+<code class="descname">id</code><a class="headerlink" href="#academics.models.Program.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="academics.models.Program.name">
+<code class="descname">name</code><a class="headerlink" href="#academics.models.Program.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="academics.models.Program.objects">
+<code class="descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#academics.models.Program.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="academics.models.Program.semester_set">
+<code class="descname">semester_set</code><a class="headerlink" href="#academics.models.Program.semester_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the reverse side of a
+many-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">Parent.children</span></code> is a <code class="docutils literal"><span class="pre">ReverseManyToOneDescriptor</span></code> instance.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="academics.models.Program.subject_set">
+<code class="descname">subject_set</code><a class="headerlink" href="#academics.models.Program.subject_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the forward and reverse sides of
+a many-to-many relation.</p>
+<p>In the example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Pizza</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">toppings</span> <span class="o">=</span> <span class="n">ManyToManyField</span><span class="p">(</span><span class="n">Topping</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;pizzas&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">Pizza.toppings</span></code> and <code class="docutils literal"><span class="pre">Topping.pizzas</span></code> are <code class="docutils literal"><span class="pre">ManyToManyDescriptor</span></code>
+instances.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="academics.models.Semester">
+<em class="property">class </em><code class="descclassname">academics.models.</code><code class="descname">Semester</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#academics.models.Semester" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">django.db.models.base.Model</span></code></p>
+<p>Semester model represents the different semesters in the particular program.</p>
+<p><cite>sem</cite> gives the semester  as 1, 2 , 3 and so on.</p>
+<p>Semester is related to Program model by a foreign key.</p>
+<p>Each Semester has different subjects related by field <cite>subjects</cite>.</p>
+<dl class="exception">
+<dt id="academics.models.Semester.DoesNotExist">
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="headerlink" href="#academics.models.Semester.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="academics.models.Semester.MultipleObjectsReturned">
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="headerlink" href="#academics.models.Semester.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="academics.models.Semester.get_meaningful_name">
+<code class="descname">get_meaningful_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#academics.models.Semester.get_meaningful_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">meaningful names for the given semester. Example, First(I) for 1, Second(II) for 2 and so on.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="academics.models.Semester.id">
+<code class="descname">id</code><a class="headerlink" href="#academics.models.Semester.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="academics.models.Semester.objects">
+<code class="descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#academics.models.Semester.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="academics.models.Semester.program">
+<code class="descname">program</code><a class="headerlink" href="#academics.models.Semester.program" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">Child.parent</span></code> is a <code class="docutils literal"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="academics.models.Semester.program_id">
+<code class="descname">program_id</code><a class="headerlink" href="#academics.models.Semester.program_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="academics.models.Semester.sem">
+<code class="descname">sem</code><a class="headerlink" href="#academics.models.Semester.sem" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="academics.models.Semester.subjects">
+<code class="descname">subjects</code><a class="headerlink" href="#academics.models.Semester.subjects" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the forward and reverse sides of
+a many-to-many relation.</p>
+<p>In the example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Pizza</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">toppings</span> <span class="o">=</span> <span class="n">ManyToManyField</span><span class="p">(</span><span class="n">Topping</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;pizzas&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">Pizza.toppings</span></code> and <code class="docutils literal"><span class="pre">Topping.pizzas</span></code> are <code class="docutils literal"><span class="pre">ManyToManyDescriptor</span></code>
+instances.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="academics.models.Subject">
+<em class="property">class </em><code class="descclassname">academics.models.</code><code class="descname">Subject</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#academics.models.Subject" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">django.db.models.base.Model</span></code></p>
+<p>Subject model represents the subjects of a particular semester/program.</p>
+<p>Each Subject has unique code.</p>
+<p>A semester has multiple subjects and similarly, a single subject, say Logic Circuit(Elx 110)
+belongs to 2nd Semester (of BE Software) and 3rd Semester (of BE IT) . So, Subject and Semester
+shows many-to-many relationship.</p>
+<p>Program and Subject are related through Semester. For example; if we want all the subjects of
+BE Software, then we have to retrieve each Semester of BE Software and from those individual semester,
+we can get the subjects.</p>
+<p>To ease the above process, we introduce the many-to-many relationship between Program and Subject.
+Now we can directly access the subjects of BE Software without joining Semester.</p>
+<dl class="exception">
+<dt id="academics.models.Subject.DoesNotExist">
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="headerlink" href="#academics.models.Subject.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="academics.models.Subject.MultipleObjectsReturned">
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="headerlink" href="#academics.models.Subject.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="academics.models.Subject.code">
+<code class="descname">code</code><a class="headerlink" href="#academics.models.Subject.code" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="academics.models.Subject.credit">
+<code class="descname">credit</code><a class="headerlink" href="#academics.models.Subject.credit" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="academics.models.Subject.id">
+<code class="descname">id</code><a class="headerlink" href="#academics.models.Subject.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="academics.models.Subject.name">
+<code class="descname">name</code><a class="headerlink" href="#academics.models.Subject.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="academics.models.Subject.objects">
+<code class="descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#academics.models.Subject.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="academics.models.Subject.programs">
+<code class="descname">programs</code><a class="headerlink" href="#academics.models.Subject.programs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the forward and reverse sides of
+a many-to-many relation.</p>
+<p>In the example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Pizza</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">toppings</span> <span class="o">=</span> <span class="n">ManyToManyField</span><span class="p">(</span><span class="n">Topping</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;pizzas&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">Pizza.toppings</span></code> and <code class="docutils literal"><span class="pre">Topping.pizzas</span></code> are <code class="docutils literal"><span class="pre">ManyToManyDescriptor</span></code>
+instances.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="academics.models.Subject.semester_set">
+<code class="descname">semester_set</code><a class="headerlink" href="#academics.models.Subject.semester_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the forward and reverse sides of
+a many-to-many relation.</p>
+<p>In the example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Pizza</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">toppings</span> <span class="o">=</span> <span class="n">ManyToManyField</span><span class="p">(</span><span class="n">Topping</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;pizzas&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">Pizza.toppings</span></code> and <code class="docutils literal"><span class="pre">Topping.pizzas</span></code> are <code class="docutils literal"><span class="pre">ManyToManyDescriptor</span></code>
+instances.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-academics.tests">
+<span id="academics-tests-module"></span><h2>academics.tests module<a class="headerlink" href="#module-academics.tests" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-academics.urls">
+<span id="academics-urls-module"></span><h2>academics.urls module<a class="headerlink" href="#module-academics.urls" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-academics.views">
+<span id="academics-views-module"></span><h2>academics.views module<a class="headerlink" href="#module-academics.views" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="academics.views.facility">
+<code class="descclassname">academics.views.</code><code class="descname">facility</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#academics.views.facility" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>request</strong> (<em>HTTPRequest</em>) – carries request info</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">renders facilities.html</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="academics.views.handle404">
+<code class="descclassname">academics.views.</code><code class="descname">handle404</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#academics.views.handle404" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>request</strong> (<em>HTTPRequest</em>) – carries request info</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">renders 404.html</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="academics.views.home">
+<code class="descclassname">academics.views.</code><code class="descname">home</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#academics.views.home" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>request</strong> (<em>HTTPRequest</em>) – carries request info</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">renders home.html</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="academics.views.program">
+<code class="descclassname">academics.views.</code><code class="descname">program</code><span class="sig-paren">(</span><em>request</em>, <em>code</em><span class="sig-paren">)</span><a class="headerlink" href="#academics.views.program" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>request</strong> (<em>HTTPRequest</em>) – carries request info</li>
+<li><strong>code</strong> (<em>int</em>) – program code</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>-&gt; filters out the program on the basis of given program code
+-&gt; if no program exists with that code, return 404
+-&gt; otherwise, render program.html with context current_program</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="academics.views.scholarship">
+<code class="descclassname">academics.views.</code><code class="descname">scholarship</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#academics.views.scholarship" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>request</strong> (<em>HTTPRequest</em>) – carries request info</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">renders scholarship.html</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-academics">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-academics" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="academics.migrations.html" class="btn btn-neutral float-right" title="academics.migrations package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="modules.html" class="btn btn-neutral float-left" title="ncit" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Bimal Raj Gyawali
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
